@@ -1,0 +1,62 @@
+.hero {
+    height: 500px;
+    /* background-color: #003366;
+    background-image: linear-gradient(315deg, #003366 0%, #242124 74%);
+
+    background-color: #002147;
+background-image: linear-gradient(315deg, #002147 0%, #3b3c36 74%); */
+
+background: #0F2027;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+            background-size: 400% 400%;
+    animation: gradientWave 10s ease-in-out infinite;
+}
+
+@keyframes gradientWave {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 100%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.hero__title {
+    font-family: 'Inconsolata', Consolas, monospace;
+    display: inline-block;
+    color: red;
+    border-right: 2px solid red;
+    /* курсор */
+    white-space: nowrap;
+    overflow: hidden;
+    /* Печать текста */
+    animation: typing 4s steps(15, end) forwards,
+        /* 20 = кол-во символов */
+        blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 15ch
+    }
+
+    /* ширина текста = число символов */
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
