@@ -6,11 +6,23 @@
 
       background-color: #002147;
   background-image: linear-gradient(315deg, #002147 0%, #3b3c36 74%); */
-  background: #0F2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 400% 400%;
   animation: gradientWave 10s ease-in-out infinite;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-flow: column wrap;
+  }
 }
 
 @keyframes gradientWave {
@@ -27,13 +39,16 @@
 .hero__title {
   font-family: "Inconsolata", Consolas, monospace;
   display: inline-block;
-  color: red;
-  border-right: 2px solid red;
+  border-right: 2px solid #ffffff;
   /* курсор */
   white-space: nowrap;
   overflow: hidden;
   /* Печать текста */
   animation: typing 4s steps(15, end) forwards, blink 0.75s step-end infinite;
+  background: linear-gradient(to right, #d558c8 0%, #24d292 100%);
+  background: linear-gradient(to right, #f9d423 0%, #e14fad 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 @keyframes typing {

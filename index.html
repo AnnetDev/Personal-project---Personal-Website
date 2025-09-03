@@ -9,7 +9,7 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container">
         <a class="header__gh-link gh-link" href="https://github.com/AnnetDev" target="_blank">AnnetDev</a>
         <nav class="header__nav">
             <menu class="header__menu">
@@ -33,53 +33,70 @@
     </header>
 
     <main>
-        <section class="hero">
-            <h1 class="hero__title ocean">Anna Baidikova</h1>
+        <section class="hero container">
+            <div class="hero__text-container">
+                <h1 class="hero__title ocean">Anna Baidikova</h1>
+                <p class="hero__intro">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio consequatur
+                    laudantium ut voluptatum officiis odit inventore. At nesciunt minus voluptatem nihil tenetur odit
+                    aliquid similique, doloribus illum optio voluptates quo?</p>
+            </div>
+            <picture>
+                <source type="image/webp" media="(min-width: 1440px)"
+                    srcset="images/hero-image@1x.webp 1x, images/hero-image@2x.webp 2x">
+                <source type="image/png" media="(min-width: 1440px)"
+                    srcset="images/hero-image@1x.png 1x, images/hero-image@2x.png 2x" width="1024" height="1019">
+                <source type="image/png" media="(min-width: 768px)"
+                    srcset="images/hero-image@1x.png 1x, images/hero-image@2x.png 2x" width="500" height="498">
+                <img class="hero__main-image" src="images/hero-image@1x.png" srcset="images/hero-image@2x.png 2x"
+                    width="280" height="279" alt="I'm Anna, I'm Frontend Developer. Nice to meet you!">
+            </picture>
+            
+
         </section>
-        <section class="home" id="home"></section>
-        <section class="about" id="about"></section>
-        <section class="skills" id="skills"></section>
-        <section class="projects" id="projects"></section>
-        <section class="contacts" id="contacts"></section>
+        <section class="home container" id="home"></section>
+        <section class="about container" id="about"></section>
+        <section class="skills container" id="skills"></section>
+        <section class="projects container" id="projects"></section>
+        <section class="contacts container" id="contacts"></section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer container">
         <div class="footer__main-content">
-        <a class="footer__gh-link gh-link" href="https://github.com/AnnetDev" target="_blank">AnnetDev</a>
-        <nav class="footer__nav">
-            <menu class="footer__menu">
-                <li class="footer__menu-item">
-                    <a href="#home">Home</a>
+            <a class="footer__gh-link gh-link" href="https://github.com/AnnetDev" target="_blank">AnnetDev</a>
+            <nav class="footer__nav">
+                <menu class="footer__menu">
+                    <li class="footer__menu-item">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#skills">Skills</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li class="footer__menu-item">
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                </menu>
+            </nav>
+            <ul class="footer__social-list">
+                <li class="footer__social-list-item">
+                    <a href=""></a>
                 </li>
-                <li class="footer__menu-item">
-                    <a href="#about">About</a>
+                <li class="footer__social-list-item">
+                    <a href=""></a>
                 </li>
-                <li class="footer__menu-item">
-                    <a href="#skills">Skills</a>
+                <li class="footer__social-list-item">
+                    <a href=""></a>
                 </li>
-                <li class="footer__menu-item">
-                    <a href="#projects">Projects</a>
-                </li>
-                <li class="footer__menu-item">
-                    <a href="#contacts">Contacts</a>
-                </li>
-            </menu>
-        </nav>
-        <ul class="footer__social-list">
-            <li class="footer__social-list-item">
-                <a href=""></a>
-            </li>
-            <li class="footer__social-list-item">
-                <a href=""></a>
-            </li>
-            <li class="footer__social-list-item">
-                <a href=""></a>
-            </li>
-        </ul>
-    </div>
-    <div class="footer__attributions">
-        <p>Coded by <a href="https://github.com/AnnetDev">Anna Baidikova</a></p>
-    </div>
+            </ul>
+        </div>
+        <div class="footer__attributions">
+            <p>Coded by <a href="https://github.com/AnnetDev">Anna Baidikova</a></p>
+        </div>
     </footer>
 </body>
 

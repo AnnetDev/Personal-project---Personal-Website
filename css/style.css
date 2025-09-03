@@ -1,4 +1,11 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Inconsolata";
+  src: url("../fonts/Inconsolata.woff2") format("woff2");
+  font-weight: 200 900;
+  font-style: normal;
+  font-display: swap;
+}
 **,
 *::before,
 *::after {
@@ -18,13 +25,47 @@ body {
   flex-direction: column;
   justify-content: space-between;
   overflow-x: hidden;
+  font-family: "Inconsolata", Consolas, monospace;
   /* background-image: 
   linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
   linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px); */
+  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
+  background-image: linear-gradient(0deg, #243949 0%, #517fa4 100%);
 }
 
 main {
   flex-grow: 1;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  padding: 0 60px;
+}
+@media (max-width: 1200px) {
+  .container {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    padding: 0 20px;
+  }
 }
 
 .hero {
@@ -34,11 +75,23 @@ main {
 
       background-color: #002147;
   background-image: linear-gradient(315deg, #002147 0%, #3b3c36 74%); */
-  background: #0F2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #2C5364, #203A43, #0F2027); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #0F2027;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 400% 400%;
   animation: gradientWave 10s ease-in-out infinite;
+  color: #ffffff;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+@media (max-width: 768px) {
+  .hero {
+    display: flex;
+    flex-flow: column wrap;
+  }
 }
 
 @keyframes gradientWave {
@@ -55,13 +108,16 @@ main {
 .hero__title {
   font-family: "Inconsolata", Consolas, monospace;
   display: inline-block;
-  color: red;
-  border-right: 2px solid red;
+  border-right: 2px solid #ffffff;
   /* курсор */
   white-space: nowrap;
   overflow: hidden;
   /* Печать текста */
   animation: typing 4s steps(15, end) forwards, blink 0.75s step-end infinite;
+  background: linear-gradient(to right, #d558c8 0%, #24d292 100%);
+  background: linear-gradient(to right, #f9d423 0%, #e14fad 100%);
+  background-clip: text;
+  color: transparent;
 }
 
 @keyframes typing {
