@@ -1,0 +1,77 @@
+.footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__main-content {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__nav {
+  min-width: 30%;
+  max-width: 40%;
+}
+
+.footer__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer__menu a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.footer__social-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer__list-link {
+  display: block;
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+.footer__list-link svg {
+  fill: #ffffff;
+}
+
+.footer__gh-link {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.footer__attributions {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: space-between;
+  font-size: 0.7rem;
+}
+.footer__attributions a {
+  display: inline-block;
+  color: white;
+}
+
+/*# sourceMappingURL=footer.css.map */

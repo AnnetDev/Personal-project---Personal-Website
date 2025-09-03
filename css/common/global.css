@@ -18,13 +18,12 @@ body {
   justify-content: space-between;
   overflow-x: hidden;
   font-family: "Inconsolata", Consolas, monospace;
+  font-size: 16px;
   /* background-image: 
   linear-gradient(rgba(0, 245, 255, 0.1) 1px, transparent 1px),
   linear-gradient(90deg, rgba(0, 245, 255, 0.1) 1px, transparent 1px); */
-  background-image: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);
-  background-image: linear-gradient(0deg, #243949 0%, #517fa4 100%);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 main {
