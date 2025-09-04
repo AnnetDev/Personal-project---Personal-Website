@@ -1,64 +1,35 @@
 .hero {
-    height: 500px;
-    /* background-color: #003366;
-    background-image: linear-gradient(315deg, #003366 0%, #242124 74%);
-
-    background-color: #002147;
-background-image: linear-gradient(315deg, #002147 0%, #3b3c36 74%); */
-
-    background: #0F2027;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-    background-size: 400% 400%;
-    animation: gradientWave 10s ease-in-out infinite;
     color: #ffffff;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    @media (max-width: 1200px) {}
-
-    @media (max-width: 768px) {
-        display: flex;
-        flex-flow: column wrap;
-    }
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // display: grid;
+    // grid-template-columns: 1fr 1fr;
+    // padding-top: 40px;
+    // padding-bottom: 40px;
+    // column-gap: 15px;
 }
 
-@keyframes gradientWave {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    50% {
-        background-position: 100% 100%;
-    }
-
-    100% {
-        background-position: 0% 0%;
-    }
-}
 
 .hero__title {
     font-family: 'Inconsolata', Consolas, monospace;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.8rem;
     display: inline-block;
-    // color: red;
     border-right: 2px solid #ffffff;
-    /* курсор */
     white-space: nowrap;
     overflow: hidden;
-    /* Печать текста */
     animation: typing 4s steps(15, end) forwards,
-        /* 20 = кол-во символов */
         blink 0.75s step-end infinite;
-    background: linear-gradient(to right, #d558c8 0%, #24d292 100%);
-background: linear-gradient(to right,#f9d423 0%, #e14fad  100%);
-// background: linear-gradient(135deg, #ffd700 0%, #ff6b9d 25%, #9333ea 50%, #00d4ff 75%, #06ffa5 100%);
+    background: linear-gradient(to right, #feb82d 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #1ac7fe 100%);
     background-clip: text;
     color: transparent;
+
+    margin: 0 0 20px;
+    padding: 0;
 }
 
 @keyframes typing {
@@ -69,8 +40,6 @@ background: linear-gradient(to right,#f9d423 0%, #e14fad  100%);
     to {
         width: 15ch
     }
-
-    /* ширина текста = число символов */
 }
 
 @keyframes blink {
@@ -79,8 +48,22 @@ background: linear-gradient(to right,#f9d423 0%, #e14fad  100%);
     }
 }
 
+.hero__text-container {
+    display: flex;
+    flex-flow: column wrap;
+    // justify-content: center;
+    align-items: center;
+    margin: 0 0 20px;
+}
+
+.hero__intro {
+        margin: 0;
+    padding: 0;
+text-align: center;
+line-height: 1.3rem;
+}
+
 .hero__main-image {
-    // width: 500px;
-    // height: 500px;
-    // border: solid red 1px;
+    max-width: 100%;
+    height: auto;
 }

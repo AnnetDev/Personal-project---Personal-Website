@@ -46,6 +46,12 @@
   gap: 10px;
 }
 
+.footer__menu-item:hover a,
+.footer__menu-item:focus a,
+.footer__menu-item:focus-within a {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.3), 0 0 40px rgba(147, 51, 234, 0.2);
+}
+
 .footer__list-link {
   display: block;
   width: 30px;
