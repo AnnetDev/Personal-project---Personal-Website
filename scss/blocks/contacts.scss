@@ -1,0 +1,74 @@
+.contacts {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contacts__heading {
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+.contacts__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.contacts__list li {
+    transition: all ease 0.3s;
+    margin: 0;
+    padding: 0;
+        display: flex;
+            align-items: center;
+
+
+}
+
+.contacts__list li a {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+}
+
+.contacts__list li p {
+    display: block;
+    margin: 0;
+    padding: 0;
+            transition: all ease 0.3s;
+
+}
+
+.contacts__list li svg {
+        width: 20vw;
+        max-width: 30px;
+        fill: #ffffff;
+        transition: all ease 0.3s;
+}
+
+.contacts__list li:hover,
+.contacts__list li:focus,
+.contacts__list li:focus-within {
+    transform: scale(1.1);
+    svg {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3))
+        drop-shadow(0 0 10px rgba(255, 255, 255, 0.2))
+        drop-shadow(0 0 20px rgba(0, 212, 255, 0.15));
+    }
+
+    p {
+        text-shadow:
+    0 0 5px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.4),
+    0 0 20px rgba(0, 212, 255, 0.3),
+    0 0 40px rgba(147, 51, 234, 0.2);
+    }
+}
