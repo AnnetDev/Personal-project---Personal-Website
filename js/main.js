@@ -1,5 +1,7 @@
 import { toggleBurgerMenu } from "./burger-menu.js";
 
-document.addEventListener("DOMContentLoaded", () => {
-    toggleBurgerMenu();
-});
+// document.addEventListener("DOMContentLoaded", () => {
+//     toggleBurgerMenu();
+// });
+
+toggleBurgerMenu();
