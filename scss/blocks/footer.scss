@@ -6,15 +6,16 @@
     align-items: center;
     gap: 10px;
     position: relative;
+    background-color: #000000;
 
-    &::before {
-        position: absolute;
-        content: "";
-        height: 0.5px;
-        width: 100%;
-        background-color: #ffffff;
-        top: 0;
-    }
+    // &::before {
+    //     position: absolute;
+    //     content: "";
+    //     height: 0.5px;
+    //     width: 100%;
+    //     background-color: #ffffff;
+    //     top: 0;
+    // }
 }
 
 .footer__main-content {

@@ -47,7 +47,7 @@
 .hero__intro {
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: start;
   line-height: 1.3rem;
 }
 

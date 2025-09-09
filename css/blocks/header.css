@@ -37,15 +37,20 @@
   max-height: 0;
   overflow: hidden;
   background-color: #000000;
+  opacity: 0;
+  transform: translateY(-10px);
+  transition: max-height 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
 }
 @media (min-width: 768px) {
   .header__nav {
     position: static;
     max-width: 60%;
+    display: flex;
+    opacity: 1;
     top: unset;
     width: unset;
-    overflow: unset;
-    max-height: unset;
+    overflow: visible;
+    max-height: fit-content;
   }
 }
 
@@ -93,6 +98,8 @@
 
 .header__nav.open {
   max-height: 300px;
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .header__menu {

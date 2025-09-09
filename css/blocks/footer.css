@@ -6,14 +6,7 @@
   align-items: center;
   gap: 10px;
   position: relative;
-}
-.footer::before {
-  position: absolute;
-  content: "";
-  height: 0.5px;
-  width: 100%;
-  background-color: #ffffff;
-  top: 0;
+  background-color: #000000;
 }
 
 .footer__main-content {
