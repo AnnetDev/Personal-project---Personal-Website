@@ -4,7 +4,7 @@
   "description": "Personal website with Vite",
   "main": "index.js",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "build": "vite build",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
