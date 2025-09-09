@@ -12,26 +12,33 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
   gap: 15px;
 }
 
 .projects__list li {
   width: 85%;
-  height: 250px;
-  height: auto;
+  max-width: 280px;
   cursor: pointer;
   transform: scale(1);
   transition: transform ease 0.3s;
 }
 
+.projects__list li div {
+  min-height: 150px;
+  height: 200px;
+  max-height: 250px;
+  border-radius: 15px;
+  overflow-y: hidden;
+}
+
 .projects__list li img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
   transition: all ease 0.3s;
+  object-position: top;
 }
 
 .projects__list li h3,
@@ -54,7 +61,8 @@
 .projects__list li:focus-within img {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 20px rgba(0, 212, 255, 0.15));
 }
-.projects__list li:hover h3, .projects__list li:hover a,
+.projects__list li:hover h3,
+.projects__list li:hover a,
 .projects__list li:focus h3,
 .projects__list li:focus a,
 .projects__list li:focus-within h3,

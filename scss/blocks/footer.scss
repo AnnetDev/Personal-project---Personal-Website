@@ -62,6 +62,20 @@
     flex-flow: row wrap;
     justify-content: center;
     gap: 10px;
+
+    svg {
+        transition: all ease 0.3s;}
+}
+
+
+.footer__social-list-item:hover,
+.footer__social-list-item:focus,
+.footer__social-list-item:focus-within {
+    svg {
+        filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3))
+        drop-shadow(0 0 10px rgba(255, 255, 255, 0.2))
+        drop-shadow(0 0 20px rgba(0, 212, 255, 0.15));
+    }
 }
 
 .footer__menu-item:hover a,

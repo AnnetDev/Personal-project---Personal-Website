@@ -86,6 +86,8 @@ h2 {
   background-clip: text;
   color: transparent;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .overlay-active::after {
@@ -116,6 +118,10 @@ section::before {
   bottom: 0;
   transform: translate(-50%);
   left: 50%;
+}
+
+a:active {
+  opacity: 0.5;
 }
 
 /*# sourceMappingURL=global.css.map */

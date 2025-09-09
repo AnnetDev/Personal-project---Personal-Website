@@ -93,6 +93,8 @@ h2 {
   background-clip: text;
   color: transparent;
   text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 .overlay-active::after {
@@ -125,6 +127,10 @@ section::before {
   left: 50%;
 }
 
+a:active {
+  opacity: 0.5;
+}
+
 .header {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -150,6 +156,19 @@ section::before {
 .header__link p {
   margin: 0;
   padding: 0;
+  transition: all ease 0.3s;
+}
+.header__link img {
+  transition: all ease 0.3s;
+}
+.header__link:hover p, .header__link:focus p, .header__link:focus-within p {
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.3), 0 0 40px rgba(147, 51, 234, 0.2);
+}
+.header__link:hover img, .header__link:focus img, .header__link:focus-within img {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.6));
+}
+.header__link:active {
+  opacity: 0.5;
 }
 
 .header img {
@@ -203,6 +222,7 @@ section::before {
   width: 100%;
   background-color: #fff;
   top: 50%;
+  transition: transform ease 0.3s, opacity ease 0.3s;
 }
 .header__burger-menu::after {
   transform: translateY(-5px);
@@ -221,6 +241,16 @@ section::before {
 }
 .header__burger-menu.open::before {
   transform: rotate(-45deg);
+}
+
+.header__burger-menu:focus::after,
+.header__burger-menu:focus::before {
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.3), 0 0 40px rgba(147, 51, 234, 0.2);
+}
+
+.header__burger-menu:active::after,
+.header__burger-menu:active::before {
+  opacity: 0.5;
 }
 
 .header__nav.open {
@@ -318,11 +348,12 @@ section::before {
 .hero__main-image {
   max-width: 100%;
   height: auto;
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.15));
 }
 
 .skills {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #000000;
   background-image: url("../images/stars.svg");
   background-attachment: fixed;
@@ -360,26 +391,33 @@ section::before {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
   gap: 15px;
 }
 
 .projects__list li {
   width: 85%;
-  height: 250px;
-  height: auto;
+  max-width: 280px;
   cursor: pointer;
   transform: scale(1);
   transition: transform ease 0.3s;
 }
 
+.projects__list li div {
+  min-height: 150px;
+  height: 200px;
+  max-height: 250px;
+  border-radius: 15px;
+  overflow-y: hidden;
+}
+
 .projects__list li img {
   width: 100%;
   height: auto;
-  border-radius: 15px;
   transition: all ease 0.3s;
+  object-position: top;
 }
 
 .projects__list li h3,
@@ -402,7 +440,8 @@ section::before {
 .projects__list li:focus-within img {
   filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 20px rgba(0, 212, 255, 0.15));
 }
-.projects__list li:hover h3, .projects__list li:hover a,
+.projects__list li:hover h3,
+.projects__list li:hover a,
 .projects__list li:focus h3,
 .projects__list li:focus a,
 .projects__list li:focus-within h3,
@@ -412,9 +451,9 @@ section::before {
 
 .contacts {
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 80px;
   background-color: #222222;
-  background-image: linear-gradient(rgba(13, 29, 51, 0.5), rgba(13, 29, 51, 0.5)), image-set(url("../../images/contacts/contacts-bg-mob@1x.webp") 1x, url("../../images/contacts/contacts-bg-mob@2x.webp") 2x, url("../../images/contacts/contacts-bg-mob@1x.jpg") 1x, url("../../images/contacts/contacts-bg-mob@2x.jpg") 2x);
+  background-image: linear-gradient(rgba(12, 20, 45, 0.7), rgba(12, 20, 45, 0.7)), image-set(url("../../images/contacts/contacts-bg-mob@1x.webp") 1x, url("../../images/contacts/contacts-bg-mob@2x.webp") 2x, url("../../images/contacts/contacts-bg-mob@1x.jpg") 1x, url("../../images/contacts/contacts-bg-mob@2x.jpg") 2x);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -423,30 +462,40 @@ section::before {
   .contacts {
     padding-top: 80px;
     padding-bottom: 80px;
-    background-image: linear-gradient(rgba(13, 29, 51, 0.5), rgba(13, 29, 51, 0.5)), image-set(url("../../images/contacts/contacts-bg-tab@1x.webp") 1x, url("../../images/contacts/contacts-bg-tab@2x.webp") 2x, url("../../images/contacts/contacts-bg-tab@1x.jpg") 1x, url("../../images/contacts/contacts-bg-tab@2x.jpg") 2x);
+    background-image: linear-gradient(rgba(12, 20, 45, 0.7), rgba(12, 20, 45, 0.7)), image-set(url("../../images/contacts/contacts-bg-tab@1x.webp") 1x, url("../../images/contacts/contacts-bg-tab@2x.webp") 2x, url("../../images/contacts/contacts-bg-tab@1x.jpg") 1x, url("../../images/contacts/contacts-bg-tab@2x.jpg") 2x);
   }
 }
 @media (min-width: 1440px) {
   .contacts {
     padding-top: 100px;
     padding-bottom: 100px;
-    background-image: linear-gradient(rgba(13, 29, 51, 0.5), rgba(13, 29, 51, 0.5)), image-set(url("../../images/contacts/contacts-bg-desk@1x.webp") 1x, url("../../images/contacts/contacts-bg-desk@2x.webp") 2x, url("../../images/contacts/contacts-bg-desk@1x.jpg") 1x, url("../../images/contacts/contacts-bg-desk@2x.jpg") 2x);
+    background-image: linear-gradient(rgba(12, 20, 45, 0.7), rgba(12, 20, 45, 0.7)), image-set(url("../../images/contacts/contacts-bg-desk@1x.webp") 1x, url("../../images/contacts/contacts-bg-desk@2x.webp") 2x, url("../../images/contacts/contacts-bg-desk@1x.jpg") 1x, url("../../images/contacts/contacts-bg-desk@2x.jpg") 2x);
   }
 }
 
 .contacts__heading {
-  margin: 0 0 30px;
+  margin: 0 0 20px;
   padding: 0;
+}
+
+.contacts__description {
+  margin: 0 0 20px;
+  padding: 0;
+  line-height: 1.4rem;
+  text-align: center;
 }
 
 .contacts__list {
   margin: 0;
-  padding: 0;
+  padding: 20px 10px;
   list-style: none;
+  border-radius: 15px;
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   gap: 15px;
   align-items: flex-start;
+  justify-content: space-evenly;
+  background-image: linear-gradient(rgba(12, 20, 45, 0.7), rgba(12, 20, 45, 0.7));
 }
 
 .contacts__list li {
@@ -549,6 +598,15 @@ section::before {
   flex-flow: row wrap;
   justify-content: center;
   gap: 10px;
+}
+.footer__social-list svg {
+  transition: all ease 0.3s;
+}
+
+.footer__social-list-item:hover svg,
+.footer__social-list-item:focus svg,
+.footer__social-list-item:focus-within svg {
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 20px rgba(0, 212, 255, 0.15));
 }
 
 .footer__menu-item:hover a,

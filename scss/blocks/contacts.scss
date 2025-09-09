@@ -1,10 +1,9 @@
 .contacts {
     padding-top: 60px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
     background-color: #222222;
-
     background-image:
-        linear-gradient(rgba(13, 29, 51, 0.5), rgba(13, 29, 51, 0.5)),
+        linear-gradient(rgba(12, 20, 45, 0.7), rgba(12, 20, 45, 0.7)),
         image-set(url("../../images/contacts/contacts-bg-mob@1x.webp") 1x,
             url("../../images/contacts/contacts-bg-mob@2x.webp") 2x,
             url("../../images/contacts/contacts-bg-mob@1x.jpg") 1x,
@@ -17,7 +16,7 @@
         padding-top: 80px;
         padding-bottom: 80px;
         background-image:
-            linear-gradient(rgba(13, 29, 51, 0.5), rgba(13, 29, 51, 0.5)),
+        linear-gradient(rgba(12, 20, 45, 0.7), rgba(12, 20, 45, 0.7)),
             image-set(url("../../images/contacts/contacts-bg-tab@1x.webp") 1x,
                 url("../../images/contacts/contacts-bg-tab@2x.webp") 2x,
                 url("../../images/contacts/contacts-bg-tab@1x.jpg") 1x,
@@ -28,7 +27,7 @@
         padding-top: 100px;
         padding-bottom: 100px;
         background-image:
-            linear-gradient(rgba(13, 29, 51, 0.5), rgba(13, 29, 51, 0.5)),
+        linear-gradient(rgba(12, 20, 45, 0.7), rgba(12, 20, 45, 0.7)),
             image-set(url("../../images/contacts/contacts-bg-desk@1x.webp") 1x,
                 url("../../images/contacts/contacts-bg-desk@2x.webp") 2x,
                 url("../../images/contacts/contacts-bg-desk@1x.jpg") 1x,
@@ -37,18 +36,28 @@
 }
 
 .contacts__heading {
-    margin: 0 0 30px;
+    margin: 0 0 20px;
     padding: 0;
+}
+
+.contacts__description {
+    margin: 0 0 20px;
+    padding: 0;
+    line-height: 1.4rem;
+    text-align: center;
 }
 
 .contacts__list {
     margin: 0;
-    padding: 0;
+    padding: 20px 10px;
     list-style: none;
+    border-radius: 15px;
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     gap: 15px;
     align-items: flex-start;
+    justify-content: space-evenly;
+    background-image: linear-gradient(rgba(12, 20, 45, 0.7), rgba(12, 20, 45, 0.7));
 }
 
 .contacts__list li {
