@@ -61,8 +61,11 @@ export const toggleBurgerMenu = () => {
     }
 
     document.addEventListener("DOMContentLoaded", (event) => {
-        headerNav.setAttribute('inert', '');
-        menuButton.addEventListener('click', () => {
+        if (window.innerWidth < 768) {
+            headerNav.setAttribute('inert', '');
+        } else {
+            headerNav.removeAttribute('inert');
+        }        menuButton.addEventListener('click', () => {
             event.stopPropagation();
             toggleMenu();
         });
@@ -74,4 +77,13 @@ export const toggleBurgerMenu = () => {
             }
         });
     });
+
+    window.addEventListener('resize', () => {
+        if (window.innerWidth < 768) {
+            headerNav.setAttribute('inert', '');
+        } else {
+            headerNav.removeAttribute('inert');
+        }
+    });
+    
 };
