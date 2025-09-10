@@ -1,6 +1,6 @@
 .footer {
     padding-top: 40px;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -16,6 +16,7 @@
     //     background-color: #ffffff;
     //     top: 0;
     // }
+
 }
 
 .footer__main-content {
@@ -29,6 +30,12 @@
     //     flex-flow: row wrap;
     // justify-content: space-between;
     // align-items: center;
+
+    @media (min-width: 768px) {
+        flex-flow: row wrap;
+
+    }
+
 }
 
 .footer__nav {
@@ -80,7 +87,10 @@
 
 .footer__menu-item:hover a,
 .footer__menu-item:focus a,
-.footer__menu-item:focus-within a {
+.footer__menu-item:focus-within a,
+.footer__gh-link:hover,
+.footer__gh-link:focus,
+.footer__gh-link:focus-within {
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.6),
         0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.3),
         0 0 40px rgba(147, 51, 234, 0.2);
@@ -105,6 +115,7 @@
         text-decoration: none;
         font-weight: 600;
         color: white;
+        transition: all ease 0.3s;
     }
 }
 

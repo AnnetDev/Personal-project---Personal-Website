@@ -21,7 +21,7 @@ body {
     color: #ffffff;
     background: #0a0a0f;
     background-image:
-    radial-gradient(circle at 20% 30%,
+        radial-gradient(circle at 20% 30%,
             rgba(0, 212, 255, 0.15),
             transparent 40%),
         radial-gradient(circle at 80% 20%,
@@ -39,10 +39,10 @@ body {
 
     &::before {
         content: "";
-  position: fixed;
-  inset: 0;
-  background: url("../../images/stars.svg") center/cover no-repeat;
-  z-index: -2;
+        position: fixed;
+        inset: 0;
+        background: url("../../images/stars.svg") center/cover no-repeat;
+        z-index: -2;
     }
 }
 
@@ -84,11 +84,11 @@ img {
 .container {
     padding: 0 30px;
 
-    @media (min-width: 767px) {
+    @media (min-width: 768px) {
         padding: 0 40px;
     }
 
-    @media (min-width: 1199px) {
+    @media (min-width: 1200px) {
         padding: 0 60px;
     }
 }
@@ -100,6 +100,10 @@ h2 {
     text-align: center;
     margin: 0;
     padding: 0;
+
+    @media (min-width: 768px) {
+        font-size: 1.6rem;
+    }
 }
 
 .overlay-active::after {
