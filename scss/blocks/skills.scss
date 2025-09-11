@@ -35,3 +35,19 @@
         // drop-shadow(0 0 40px rgba(147, 51, 234, 0.2));
     }
 }
+
+.skills.light-mode {
+    background-image: linear-gradient(rgba(248,245,240,0.6), rgba(248,245,240,0.6)),
+    image-set(url("/images/skills/skills-light-bg@1x.webp"),
+            url("/images/skills/skills-light-bg@2x.webp"),
+            url("/images/skills/skills-light-bg@1x.jpg"),
+            url("/images/skills/skills-light-bg@2x.jpg"));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    svg {
+        fill: #000000;
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.15));
+    }
+}

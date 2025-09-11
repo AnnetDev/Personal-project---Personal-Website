@@ -167,6 +167,11 @@ body.light-mode {
         radial-gradient(circle at 30% 80%,
             rgba(129, 199, 132, 0.12),
             transparent 50%);
+            background-size: 250% 250%;
+            animation: aurora-shift 10s ease-in-out infinite;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        
 
             &::before  {
                 background: url("/images/bg-light.svg") center/cover no-repeat;

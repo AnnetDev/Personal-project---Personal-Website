@@ -4,7 +4,10 @@ export const themeToggle = () => {
     const themeToggleBtnSun = document.querySelector('[data-id="theme-toggle-sun"]');
     const themeToggleBtnMoon = document.querySelector('[data-id="theme-toggle-moon"]');
     const header = document.querySelector('[data-id="header"]');
+    const footer = document.querySelector('[data-id="footer"]');
+
     const heroSection = document.querySelector('[data-id="hero"]');
+    const skillsSection = document.querySelector('[data-id="skills"]');
 
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -14,6 +17,9 @@ export const themeToggle = () => {
             themeToggleBtnMoon.classList.toggle('active');
             header.classList.toggle('light-mode');
             heroSection.classList.toggle('light-mode');
+            skillsSection.classList.toggle('light-mode');
+            footer.classList.toggle('light-mode');
+
         });
     });
 }
