@@ -178,11 +178,17 @@ body.light-mode {
     }
 
     section::before {
-       background-color: #f8f5f0;
+        background-color: #f8f5f0;
     }
 
     section {
         box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-
     }
+
+    h2 {
+        background-clip: text;
+        color: transparent;
+        text-align: center;
+    }
+
 }

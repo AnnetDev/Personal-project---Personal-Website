@@ -8,6 +8,7 @@ export const themeToggle = () => {
     const heroSection = document.querySelector('[data-id="hero"]');
     const skillsSection = document.querySelector('[data-id="skills"]');
     const projectsSection = document.querySelector('[data-id="projects"]');
+    const contactsSection = document.querySelector('[data-id="contacts"]');
 
     document.addEventListener('DOMContentLoaded', () => {
 
@@ -20,7 +21,7 @@ export const themeToggle = () => {
             skillsSection.classList.toggle('light-mode');
             projectsSection.classList.toggle('light-mode');
             footer.classList.toggle('light-mode');
-
+            contactsSection.classList.toggle('light-mode');
         });
     });
 }

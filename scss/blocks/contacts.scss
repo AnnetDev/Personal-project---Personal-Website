@@ -107,7 +107,48 @@
 
     p {
         text-shadow: 0 0 5px rgba(255, 255, 255, 0.6),
-            0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.3),
+            0 0 10px rgba(255, 255, 255, 0.5), 0 0 20px rgba(0, 212, 255, 0.3),
             0 0 40px rgba(147, 51, 234, 0.2);
     }
 }
+
+.contacts.light-mode {
+    background-image:
+    linear-gradient(rgba(250, 244, 235, 0.5), 
+    rgba(250, 240, 225, 0.5)),        image-set(url("/images/contacts/contacts-bg-mob@1x.webp") 1x,
+            url("/images/contacts/contacts-bg-mob@2x.webp") 2x,
+            url("/images/contacts/contacts-bg-mob@1x.jpg") 1x,
+            url("/images/contacts/contacts-bg-mob@2x.jpg") 2x);
+
+            @media (min-width: 768px) {
+                background-image:
+                linear-gradient(rgba(250, 244, 235, 0.5), 
+                rgba(250, 240, 225, 0.5)),                    image-set(url("/images/contacts/contacts-bg-tab@1x.webp") 1x,
+                        url("/images/contacts/contacts-bg-tab@2x.webp") 2x,
+                        url("/images/contacts/contacts-bg-tab@1x.jpg") 1x,
+                        url("/images/contacts/contacts-bg-tab@2x.jpg") 2x);
+            }
+        
+            @media (min-width: 1200px) {
+                background-image:
+                linear-gradient(rgba(250, 244, 235, 0.5), 
+                rgba(250, 240, 225, 0.5)),
+                    image-set(url("/images/contacts/contacts-bg-desk@1x.webp") 1x,
+                        url("/images/contacts/contacts-bg-desk@2x.webp") 2x,
+                        url("/images/contacts/contacts-bg-desk@1x.jpg") 1x,
+                        url("/images/contacts/contacts-bg-desk@2x.jpg") 2x);
+            }
+
+            .contacts__description {
+                font-weight: 600;
+                color: #000000;
+            }
+
+            .contacts__heading {
+                background: linear-gradient(to right, #feb82d 15%, #fda34b 35%, #ff7882 45%, #c8699e 52%, #7046aa 81%, #1ac7fe 100%);
+                background-clip: text;
+                color: transparent;
+        
+            }
+}
+

@@ -8,8 +8,8 @@
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="icon" type="image/svg+xml" href="/Personal-project---Personal-Website/assets/favicon-Ck7qq7qn.svg">
     <title>Anna Baidikova</title>
-  <script type="module" crossorigin src="/Personal-project---Personal-Website/assets/index-Czx714Bh.js"></script>
-  <link rel="stylesheet" crossorigin href="/Personal-project---Personal-Website/assets/index-BELMvLg-.css">
+  <script type="module" crossorigin src="/Personal-project---Personal-Website/assets/index-D2g3k8lR.js"></script>
+  <link rel="stylesheet" crossorigin href="/Personal-project---Personal-Website/assets/index-WZfFovLK.css">
 </head>
 
 <body>
@@ -75,10 +75,10 @@
     </header>
 
     <main id="home">
-        <section class="hero container">
-            <div class="hero__text-container" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="100"
+        <section class="hero container" data-id="hero">
+            <div class="hero__text-container" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100"
                 data-aos-duration="1200" startEvent="DOMContentLoaded">
-                <h1 class="hero__title ocean">Anna Baidikova</h1>
+                <h1 class="hero__title">Anna Baidikova</h1>
                 <p class="hero__intro">
                     Hi 👋🏻, I’m Anna — a Frontend & Web Developer. I love turning ideas into user-friendly, responsive
                     websites using HTML, CSS/SCSS, JavaScript, React, and WordPress.
@@ -100,16 +100,14 @@
 
                 <img class="hero__main-image" src="/Personal-project---Personal-Website/assets/hero-image-mobile@1x-BnX_1eNs.png"
                     srcset="/Personal-project---Personal-Website/assets/hero-image-mobile@2x-BcxDb4OX.png 2x" width="280" height="279"
-                    alt="I'm Anna, I'm Frontend Developer. Nice to meet you!" data-aos="fade-left"
+                    alt="I'm Anna, I'm Frontend Developer. Nice to meet you!" data-aos="fade-down"
                     data-aos-easing="linear" data-aos-delay="100" data-aos-duration="1200"
                     startEvent="DOMContentLoaded">
             </picture>
 
         </section>
 
-        <section class="about container" id="about"></section>
-
-        <section class="skills container" id="skills">
+        <section class="skills container" id="skills" data-id="skills">
             <h2>My stack</h2>
             <ul class="skills__list">
                 <li class="skills__list-item">
@@ -147,7 +145,7 @@
             </ul>
         </section>
 
-        <section class="projects container" id="projects">
+        <section class="projects container" id="projects" data-id="projects">
             <h2 class="projects__heading">My projects</h2>
             <ul class="projects__list">
                 <li data-aos="fade-right">
@@ -430,7 +428,7 @@
         </section>
     </main>
 
-    <footer class="footer container">
+    <footer class="footer container" data-id="footer">
         <div class="footer__main-content">
             <a class="footer__gh-link gh-link" href="https://github.com/AnnetDev" target="_blank" noreferrer
                 noopener>AnnetDev</a>
