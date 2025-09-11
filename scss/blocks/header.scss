@@ -10,6 +10,8 @@
     background-color: #000000;
 }
 
+
+
 .header__link {
     display: flex;
     flex-flow: row wrap;
@@ -19,6 +21,7 @@
     color: #ffffff;
     font-weight: 600;
     font-size: 1.5rem;
+    transition: all 0.3s ease;
 
     p {
         margin: 0;
@@ -166,15 +169,21 @@
     text-decoration: none;
     color: #ffffff;
     font-size: 1.2rem;
+    transition: all ease 0.3s;
+
 }
 
 .header__menu-item {
     cursor: pointer;
+    transition: all ease 0.3s;
+
 }
 
 .header__menu-item:hover a,
 .header__menu-item:focus a,
 .header__menu-item:focus-within a {
+    transition: all ease 0.3s;
+
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.6),
         0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.3),
         0 0 40px rgba(147, 51, 234, 0.2);
@@ -184,11 +193,23 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    transition: all ease 0.3s;
+
 
     svg {
         color: #ffffff;
-        transition: all;
+        transition: all ease 0.3s;
     }
+}
+
+.header__theme-toggle-icon-moon,
+.header__theme-toggle-icon-sun {
+    display: none;
+}
+
+.header__theme-toggle-icon-moon.active,
+.header__theme-toggle-icon-sun.active {
+    display: block;
 }
 
 .header__theme-toggle:hover,
@@ -198,5 +219,77 @@
         filter:
             drop-shadow(0 0 5px rgba(255, 255, 255, 0.6)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.4)) drop-shadow(0 0 20px rgba(0, 212, 255, 0.3)) drop-shadow(0 0 40px rgba(147, 51, 234, 0.2));
     }
+}
+
+.header.light-mode {
+    background-color: #f8f5f0;
+    color: #2b2b2b;
+
+    .header__link {
+        color: #2b2b2b;
+
+        &:hover,
+        &:focus,
+        &:focus-within {
+            p {
+                text-shadow:
+                        0 1px 2px rgba(0, 0, 0, 0.4),
+    0 3px 4px rgba(0, 0, 0, 0.3);
+
+            }
+
+            img {
+                filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.6));
+            }
+        }
+    }
+
+    .header__theme-toggle:hover,
+    .header__theme-toggle:focus,
+    .header__theme-toggle:focus-within {
+        svg {
+            filter:
+                drop-shadow(0 0 5px rgba(0, 0, 0, 0.6)) drop-shadow(0 0 10px rgba(0, 0, 0, 0.4)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 40px rgba(147, 51, 234, 0.2));
+        }
+    }
+
+    .header__nav {
+        background-color: #f8f5f0;
+    }
+
+    .header__menu a {
+        color: #2b2b2b;
+        font-weight: 600;
+    }
+
+    .header__theme-toggle svg {
+        color: #000000;
+    }
+
+    .header__burger-menu {
+        &::after,
+        &::before {
+            background-color: #000000;
+        }
+    }
+
+    .header__burger-menu:focus::after,
+.header__burger-menu:focus::before {
+    box-shadow:
+    0 0 5px rgba(0, 0, 0, 0.6),
+    0 0 10px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(30, 30, 60, 0.4),
+    0 0 40px rgba(50, 0, 100, 0.3);
+}
+
+.header__menu-item:hover a,
+.header__menu-item:focus a,
+.header__menu-item:focus-within a {
+    text-shadow: 
+    0 1px 2px rgba(0, 0, 0, 0.4),
+    0 3px 4px rgba(0, 0, 0, 0.3);
+  
+  
+}
 
 }

@@ -1,6 +1,7 @@
 import { toggleBurgerMenu } from "./burger-menu.js";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { themeToggle } from "./theme-toggle.js";
 
 AOS.init(
     {
@@ -14,3 +15,4 @@ AOS.init(
     }
 );
 toggleBurgerMenu();
+themeToggle();

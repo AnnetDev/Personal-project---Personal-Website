@@ -13,8 +13,7 @@
 
 <body>
     <header class="header container" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100"
-        data-aos-duration="1200" startEvent="DOMContentLoaded">
-        <!-- <a class="header__gh-link gh-link" href="https://github.com/AnnetDev" target="_blank">AnnetDev</a> -->
+        data-aos-duration="1200" startEvent="DOMContentLoaded" data-id="header">
         <a class="header__link" href="index.html">
             <img src="./images/icons/ABlogo.svg" alt="Welcome to Anna's website">
             <p>AnnetDev</p>
@@ -40,22 +39,33 @@
                     <a href="#contacts">Contacts</a>
                 </li>
                 <li class="header__menu-item">
-                    <button class="header__theme-toggle">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" role="img"
-                            aria-labelledby="sunTitle">
-                            <title id="sunTitle">Солнце</title>
-                            <circle cx="12" cy="12" r="4" fill="currentColor" />
-                            <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
-                                <line x1="12" y1="1.5" x2="12" y2="4.5" />
-                                <line x1="12" y1="19.5" x2="12" y2="22.5" />
-                                <line x1="1.5" y1="12" x2="4.5" y2="12" />
-                                <line x1="19.5" y1="12" x2="22.5" y2="12" />
-                                <line x1="4.2" y1="4.2" x2="6.2" y2="6.2" />
-                                <line x1="17.8" y1="17.8" x2="19.8" y2="19.8" />
-                                <line x1="4.2" y1="19.8" x2="6.2" y2="17.8" />
-                                <line x1="17.8" y1="6.2" x2="19.8" y2="4.2" />
-                            </g>
-                        </svg>
+                    <button class="header__theme-toggle" data-id="theme-toggle">
+                        <span class="visually-hidden">Click to dark-mode</span>
+
+                        <div class="header__theme-toggle-icon header__theme-toggle-icon-sun active" data-id="theme-toggle-sun"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" role="img" aria-labelledby="sunTitle">
+                                <title id="sunTitle">Солнце</title>
+                                <circle cx="12" cy="12" r="4" fill="currentColor" />
+                                <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                                    <line x1="12" y1="1.5" x2="12" y2="4.5" />
+                                    <line x1="12" y1="19.5" x2="12" y2="22.5" />
+                                    <line x1="1.5" y1="12" x2="4.5" y2="12" />
+                                    <line x1="19.5" y1="12" x2="22.5" y2="12" />
+                                    <line x1="4.2" y1="4.2" x2="6.2" y2="6.2" />
+                                    <line x1="17.8" y1="17.8" x2="19.8" y2="19.8" />
+                                    <line x1="4.2" y1="19.8" x2="6.2" y2="17.8" />
+                                    <line x1="17.8" y1="6.2" x2="19.8" y2="4.2" />
+                                </g>
+                            </svg></div>
+                        <div class="header__theme-toggle-icon header__theme-toggle-icon-moon" data-id="theme-toggle-moon">
+                            <span class="visually-hidden">Click to light-mode</span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                role="img" aria-labelledby="moonTitle">
+                                <title id="moonTitle">Луна</title>
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="currentColor" />
+                            </svg>
+                        </div>
 
                     </button>
                 </li>
