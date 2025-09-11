@@ -18,7 +18,7 @@
 
     @media (min-width: 1200px) {
         padding-top: 40px;
-        padding-bottom: 40px;    
+        padding-bottom: 40px;
     }
 }
 
@@ -82,4 +82,19 @@
     max-width: 100%;
     height: auto;
     filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.15));
+}
+
+.hero.light-mode {
+    color: #2b2b2b;
+
+    .hero__title {
+        border-right: 2px solid #2b2b2b;
+        //         background: linear-gradient(to right, #feb82d 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #1ac7fe 100%);
+        // background-clip: text;
+
+    }
+
+    .hero__intro {
+        font-weight: 500;
+    }
 }

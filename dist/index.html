@@ -8,14 +8,13 @@
     <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="icon" type="image/svg+xml" href="/Personal-project---Personal-Website/assets/favicon-Ck7qq7qn.svg">
     <title>Anna Baidikova</title>
-  <script type="module" crossorigin src="/Personal-project---Personal-Website/assets/index-DKvznyss.js"></script>
-  <link rel="stylesheet" crossorigin href="/Personal-project---Personal-Website/assets/index-0sP7E9Kg.css">
+  <script type="module" crossorigin src="/Personal-project---Personal-Website/assets/index-Czx714Bh.js"></script>
+  <link rel="stylesheet" crossorigin href="/Personal-project---Personal-Website/assets/index-BELMvLg-.css">
 </head>
 
 <body>
     <header class="header container" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100"
-    data-aos-duration="1200" startEvent="DOMContentLoaded">
-        <!-- <a class="header__gh-link gh-link" href="https://github.com/AnnetDev" target="_blank">AnnetDev</a> -->
+        data-aos-duration="1200" startEvent="DOMContentLoaded" data-id="header">
         <a class="header__link" href="index.html">
             <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2032%2032'%3e%3cdefs%3e%3clinearGradient%20id='goldGradient'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%23ffd700'/%3e%3cstop%20offset='100%25'%20stop-color='%23ff6b9d'/%3e%3c/linearGradient%3e%3clinearGradient%20id='blueGradient'%20x1='0%25'%20y1='0%25'%20x2='100%25'%20y2='100%25'%3e%3cstop%20offset='0%25'%20stop-color='%239333ea'/%3e%3cstop%20offset='100%25'%20stop-color='%2300d4ff'/%3e%3c/linearGradient%3e%3c/defs%3e%3cpath%20d='M6%2024%20L11%208%20L13%208%20L18%2024%20M9%2019%20L15%2019'%20stroke='url(%23goldGradient)'%20stroke-width='2'%20fill='none'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M18%208%20L18%2024'%20stroke='url(%23blueGradient)'%20stroke-width='2'%20fill='none'%20stroke-linecap='round'/%3e%3cpath%20d='M18%208%20L22%208%20Q25%208%2025%2011.5%20Q25%2015%2022%2015%20L18%2015'%20stroke='url(%23blueGradient)'%20stroke-width='2'%20fill='none'%20stroke-linecap='round'/%3e%3cpath%20d='M18%2015%20L23%2015%20Q26%2015%2026%2019.5%20Q26%2024%2023%2024%20L18%2024'%20stroke='url(%23blueGradient)'%20stroke-width='2'%20fill='none'%20stroke-linecap='round'/%3e%3c/svg%3e" alt="Welcome to Anna's website">
             <p>AnnetDev</p>
@@ -40,6 +39,37 @@
                 <li class="header__menu-item">
                     <a href="#contacts">Contacts</a>
                 </li>
+                <li class="header__menu-item">
+                    <button class="header__theme-toggle" data-id="theme-toggle">
+                        <span class="visually-hidden">Click to dark-mode</span>
+
+                        <div class="header__theme-toggle-icon header__theme-toggle-icon-sun active" data-id="theme-toggle-sun"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                height="24" viewBox="0 0 24 24" role="img" aria-labelledby="sunTitle">
+                                <title id="sunTitle">Солнце</title>
+                                <circle cx="12" cy="12" r="4" fill="currentColor" />
+                                <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+                                    <line x1="12" y1="1.5" x2="12" y2="4.5" />
+                                    <line x1="12" y1="19.5" x2="12" y2="22.5" />
+                                    <line x1="1.5" y1="12" x2="4.5" y2="12" />
+                                    <line x1="19.5" y1="12" x2="22.5" y2="12" />
+                                    <line x1="4.2" y1="4.2" x2="6.2" y2="6.2" />
+                                    <line x1="17.8" y1="17.8" x2="19.8" y2="19.8" />
+                                    <line x1="4.2" y1="19.8" x2="6.2" y2="17.8" />
+                                    <line x1="17.8" y1="6.2" x2="19.8" y2="4.2" />
+                                </g>
+                            </svg></div>
+                        <div class="header__theme-toggle-icon header__theme-toggle-icon-moon" data-id="theme-toggle-moon">
+                            <span class="visually-hidden">Click to light-mode</span>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                role="img" aria-labelledby="moonTitle">
+                                <title id="moonTitle">Луна</title>
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="currentColor" />
+                            </svg>
+                        </div>
+
+                    </button>
+                </li>
             </menu>
         </nav>
     </header>
@@ -47,7 +77,7 @@
     <main id="home">
         <section class="hero container">
             <div class="hero__text-container" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="100"
-            data-aos-duration="1200" startEvent="DOMContentLoaded">
+                data-aos-duration="1200" startEvent="DOMContentLoaded">
                 <h1 class="hero__title ocean">Anna Baidikova</h1>
                 <p class="hero__intro">
                     Hi 👋🏻, I’m Anna — a Frontend & Web Developer. I love turning ideas into user-friendly, responsive
@@ -56,22 +86,23 @@
             </div>
 
             <picture>
-                <source type="image/webp" media="(min-width: 1440px)"
+                <source type="image/webp" media="(min-width: 1200px)"
                     srcset="/Personal-project---Personal-Website/assets/hero-image-desktop@1x-BlyMaV_A.webp 1x, /Personal-project---Personal-Website/assets/hero-image-desktop@2x-B1I-0aCr.webp 2x">
                 <source type="image/webp" media="(min-width: 768px)"
                     srcset="/Personal-project---Personal-Website/assets/hero-image-tablet@1x-CmZVZMg-.webp 1x, /Personal-project---Personal-Website/assets/hero-image-tablet@2x-C1QgmEFN.webp 2x">
                 <source type="image/webp"
                     srcset="/Personal-project---Personal-Website/assets/hero-image-mobile@1x-DNid3Qgz.webp 1x, /Personal-project---Personal-Website/assets/hero-image-mobile@2x-B3IrMBkA.webp 2x">
 
-                <source type="image/png" media="(min-width: 1440px)"
+                <source type="image/png" media="(min-width: 1200px)"
                     srcset="/Personal-project---Personal-Website/assets/hero-image-desktop@1x-CuP0rL71.png 1x, /Personal-project---Personal-Website/assets/hero-image-desktop@2x-BN5KDkmZ.png 2x">
                 <source type="image/png" media="(min-width: 768px)"
                     srcset="/Personal-project---Personal-Website/assets/hero-image-tablet@1x-vXE3gEFS.png 1x, /Personal-project---Personal-Website/assets/hero-image-tablet@2x-T2vZ-fgR.png 2x">
 
                 <img class="hero__main-image" src="/Personal-project---Personal-Website/assets/hero-image-mobile@1x-BnX_1eNs.png"
                     srcset="/Personal-project---Personal-Website/assets/hero-image-mobile@2x-BcxDb4OX.png 2x" width="280" height="279"
-                    alt="I'm Anna, I'm Frontend Developer. Nice to meet you!" data-aos="fade-left" data-aos-easing="linear" data-aos-delay="100"
-                    data-aos-duration="1200" startEvent="DOMContentLoaded">
+                    alt="I'm Anna, I'm Frontend Developer. Nice to meet you!" data-aos="fade-left"
+                    data-aos-easing="linear" data-aos-delay="100" data-aos-duration="1200"
+                    startEvent="DOMContentLoaded">
             </picture>
 
         </section>
@@ -124,14 +155,14 @@
                         <span class="visually-hidden">View project</span>
                         <div>
                             <picture>
-                                <source type="image/webp" media="(min-width: 1440px)"
+                                <source type="image/webp" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/internship-desktop@1x-C51sfJAZ.webp 1x, /Personal-project---Personal-Website/assets/internship-desktop@2x-CGZEZWwM.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/internship-tablet@1x-D_oaExNh.webp 1x, /Personal-project---Personal-Website/assets/internship-tablet@2x-CyIjs-Zf.webp 2x">
                                 <source type="image/webp"
                                     srcset="/Personal-project---Personal-Website/assets/internship-mobile@1x-D3JLlV2K.webp 1x, /Personal-project---Personal-Website/assets/internship-mobile@2x-Bu3AcPcx.webp 2x">
 
-                                <source type="image/jpg" media="(min-width: 1440px)"
+                                <source type="image/jpg" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/internship-desktop@1x-C4Q7PWQa.jpg 1x, /Personal-project---Personal-Website/assets/internship-desktop@2x-CNIs0h1y.jpg 2x">
                                 <source type="image/jpg" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/internship-tablet@1x-BzeV0WQR.jpg 1x, /Personal-project---Personal-Website/assets/internship-tablet@2x-DjmtRVDL.jpg 2x">
@@ -150,14 +181,14 @@
                         <span class="visually-hidden">View project</span>
                         <div>
                             <picture>
-                                <source type="image/webp" media="(min-width: 1440px)"
+                                <source type="image/webp" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/timeline-desktop@1x-BVJoyBxT.webp 1x, /Personal-project---Personal-Website/assets/timeline-desktop@2x-B8wkinnW.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/timeline-tablet@1x-C0WOpR81.webp 1x, /Personal-project---Personal-Website/assets/timeline-tablet@2x-lXHep9eA.webp 2x">
                                 <source type="image/webp"
                                     srcset="/Personal-project---Personal-Website/assets/timeline-mobile@1x-Zj1lH8NM.webp 1x, /Personal-project---Personal-Website/assets/timeline-mobile@2x-LHVRjzGj.webp 2x">
 
-                                <source type="image/jpg" media="(min-width: 1440px)"
+                                <source type="image/jpg" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/timeline-desktop@1x-D-iVuKEU.jpg 1x, /Personal-project---Personal-Website/assets/timeline-desktop@2x-C2AmF7uG.jpg 2x">
                                 <source type="image/jpg" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/timeline-tablet@1x-BGjl50Zu.jpg 1x, /Personal-project---Personal-Website/assets/timeline-tablet@2x-CCEK1zzz.jpg 2x">
@@ -176,14 +207,14 @@
                         <span class="visually-hidden">View project</span>
                         <div>
                             <picture>
-                                <source type="image/webp" media="(min-width: 1440px)"
+                                <source type="image/webp" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/farmfood-desktop@1x-B8cGRxcC.webp 1x, /Personal-project---Personal-Website/assets/farmfood-desktop@2x-BQ5uBIgT.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/farmfood-tablet@1x-ow_XlF-G.webp 1x, /Personal-project---Personal-Website/assets/farmfood-tablet@2x-CPZkq9_w.webp 2x">
                                 <source type="image/webp"
                                     srcset="/Personal-project---Personal-Website/assets/farmfood-mobile@1x-L6IuHFHy.webp 1x, /Personal-project---Personal-Website/assets/farmfood-mobile@2x-B7HSTSIS.webp 2x">
 
-                                <source type="image/jpg" media="(min-width: 1440px)"
+                                <source type="image/jpg" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/farmfood-desktop@1x-4LXwyeuI.jpg 1x, /Personal-project---Personal-Website/assets/farmfood-desktop@2x-BsGI89hp.jpg 2x">
                                 <source type="image/jpg" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/farmfood-tablet@1x-BX0k2KpW.jpg 1x, /Personal-project---Personal-Website/assets/farmfood-tablet@2x-CE0l4-Cv.jpg 2x">
@@ -203,14 +234,14 @@
                         <span class="visually-hidden">View project</span>
                         <div>
                             <picture>
-                                <source type="image/webp" media="(min-width: 1440px)"
+                                <source type="image/webp" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/lifetour-desktop@1x-CuJh9ZhR.webp 1x, /Personal-project---Personal-Website/assets/lifetour-desktop@2x-CthFPQ5e.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/lifetour-tablet@1x-w2knAjg9.webp 1x, /Personal-project---Personal-Website/assets/lifetour-tablet@2x-D16qdr_q.webp 2x">
                                 <source type="image/webp"
                                     srcset="/Personal-project---Personal-Website/assets/lifetour-mobile@1x-B2e0WWEF.webp 1x, /Personal-project---Personal-Website/assets/lifetour-mobile@2x-BUc3eK2h.webp 2x">
 
-                                <source type="image/jpg" media="(min-width: 1440px)"
+                                <source type="image/jpg" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/lifetour-desktop@1x-9OnI7-l-.jpg 1x, /Personal-project---Personal-Website/assets/lifetour-desktop@2x-CFv9P7EP.jpg 2x">
                                 <source type="image/jpg" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/lifetour-tablet@1x-BIQxfpFC.jpg 1x, /Personal-project---Personal-Website/assets/lifetour-tablet@2x-DPOT-yNh.jpg 2x">
@@ -229,14 +260,14 @@
                         <span class="visually-hidden">View project</span>
                         <div>
                             <picture>
-                                <source type="image/webp" media="(min-width: 1440px)"
+                                <source type="image/webp" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/osnova-desktop@1x-DAYpKQHu.webp 1x, /Personal-project---Personal-Website/assets/osnova-desktop@2x-BmEO2-MG.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/osnova-tablet@1x-CPUTTeTD.webp 1x, /Personal-project---Personal-Website/assets/osnova-tablet@2x-Dw_2SdQZ.webp 2x">
                                 <source type="image/webp"
                                     srcset="/Personal-project---Personal-Website/assets/osnova-mobile@1x-DPf_0sfr.webp 1x, /Personal-project---Personal-Website/assets/osnova-mobile@2x-nx6HndRg.webp 2x">
 
-                                <source type="image/jpg" media="(min-width: 1440px)"
+                                <source type="image/jpg" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/osnova-desktop@1x-iHoc92z4.jpg 1x, /Personal-project---Personal-Website/assets/osnova-desktop@2x-BE0_L4aH.jpg 2x">
                                 <source type="image/jpg" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/osnova-tablet@1x-B6YL_BTh.jpg 1x, /Personal-project---Personal-Website/assets/osnova-tablet@2x-D21xy3Oz.jpg 2x">
@@ -255,14 +286,14 @@
                         <span class="visually-hidden">View project</span>
                         <div>
                             <picture>
-                                <source type="image/webp" media="(min-width: 1440px)"
+                                <source type="image/webp" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/supergym-desktop@1x-CWIwlZlc.webp 1x, /Personal-project---Personal-Website/assets/supergym-desktop@2x-CsiEfbIc.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/supergym-tablet@1x-Blo4u0oe.webp 1x, /Personal-project---Personal-Website/assets/supergym-tablet@2x-CmTGqJ2k.webp 2x">
                                 <source type="image/webp"
                                     srcset="/Personal-project---Personal-Website/assets/supergym-mobile@1x-DgQT06tS.webp 1x, /Personal-project---Personal-Website/assets/supergym-mobile@2x-Du8E7rih.webp 2x">
 
-                                <source type="image/jpg" media="(min-width: 1440px)"
+                                <source type="image/jpg" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/supergym-desktop@1x-BXRF7u14.jpg 1x, /Personal-project---Personal-Website/assets/supergym-desktop@2x-DQvLZSqb.jpg 2x">
                                 <source type="image/jpg" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/supergym-tablet@1x-CBp_pk5X.jpg 1x, /Personal-project---Personal-Website/assets/supergym-tablet@2x-C_UtI66U.jpg 2x">
@@ -281,14 +312,14 @@
                         <span class="visually-hidden">View project</span>
                         <div>
                             <picture>
-                                <source type="image/webp" media="(min-width: 1440px)"
+                                <source type="image/webp" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/drink2go-desktop@1x-oVKwZqA-.webp 1x, /Personal-project---Personal-Website/assets/drink2go-desktop@2x-DCibID-L.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/drink2go-tablet@1x-DEet8f8x.webp 1x, /Personal-project---Personal-Website/assets/drink2go-tablet@2x-DT9WPMZI.webp 2x">
                                 <source type="image/webp"
                                     srcset="/Personal-project---Personal-Website/assets/drink2go-mobile@1x-DGJssNPA.webp 1x, /Personal-project---Personal-Website/assets/drink2go-mobile@2x-BdGu7RzV.webp 2x">
 
-                                <source type="image/jpg" media="(min-width: 1440px)"
+                                <source type="image/jpg" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/drink2go-desktop@1x-C90eOAv2.jpg 1x, /Personal-project---Personal-Website/assets/drink2go-desktop@2x-DJ0NDfOF.jpg 2x">
                                 <source type="image/jpg" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/drink2go-tablet@1x-CYLQt_KH.jpg 1x, /Personal-project---Personal-Website/assets/drink2go-tablet@2x-D_ZizQPF.jpg 2x">
@@ -307,14 +338,14 @@
                         <span class="visually-hidden">View project</span>
                         <div>
                             <picture>
-                                <source type="image/webp" media="(min-width: 1440px)"
+                                <source type="image/webp" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/kekstagram-desktop@1x-BZafbsrs.webp 1x, /Personal-project---Personal-Website/assets/kekstagram-desktop@2x-CfGOopqv.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/kekstagram-tablet@1x-Dth3rxqb.webp 1x, /Personal-project---Personal-Website/assets/kekstagram-tablet@2x-Byr4VjC2.webp 2x">
                                 <source type="image/webp"
                                     srcset="/Personal-project---Personal-Website/assets/kekstagram-mobile@1x-Chy8tKtc.webp 1x, /Personal-project---Personal-Website/assets/kekstagram-mobile@2x-BOn9NsZf.webp 2x">
 
-                                <source type="image/jpg" media="(min-width: 1440px)"
+                                <source type="image/jpg" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/kekstagram-desktop@1x-CtQCR4VG.jpg 1x, /Personal-project---Personal-Website/assets/kekstagram-desktop@2x-BHJ76cP1.jpg 2x">
                                 <source type="image/jpg" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/kekstagram-tablet@1x-28ozSNe5.jpg 1x, /Personal-project---Personal-Website/assets/kekstagram-tablet@2x-UB8xRRD8.jpg 2x">
@@ -333,14 +364,14 @@
                         <span class="visually-hidden">View project</span>
                         <div>
                             <picture>
-                                <source type="image/webp" media="(min-width: 1440px)"
+                                <source type="image/webp" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/catenergy-desktop@1x-_4jBvabN.webp 1x, /Personal-project---Personal-Website/assets/catenergy-desktop@2x-BwdnYMYM.webp 2x">
                                 <source type="image/webp" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/catenergy-tablet@1x-gMOv0E6o.webp 1x, /Personal-project---Personal-Website/assets/catenergy-tablet@2x-BI--pfPz.webp 2x">
                                 <source type="image/webp"
                                     srcset="/Personal-project---Personal-Website/assets/catenergy-mobile@1x-DpPzd0px.webp 1x, /Personal-project---Personal-Website/assets/catenergy-mobile@2x-n3F73kHn.webp 2x">
 
-                                <source type="image/jpg" media="(min-width: 1440px)"
+                                <source type="image/jpg" media="(min-width: 1200px)"
                                     srcset="/Personal-project---Personal-Website/assets/catenergy-desktop@1x-CEgqXvwi.jpg 1x, /Personal-project---Personal-Website/assets/catenergy-desktop@2x-vENDVvvl.jpg 2x">
                                 <source type="image/jpg" media="(min-width: 768px)"
                                     srcset="/Personal-project---Personal-Website/assets/catenergy-tablet@1x-C1vH_RjA.jpg 1x, /Personal-project---Personal-Website/assets/catenergy-tablet@2x-lXAKl3Fq.jpg 2x">
@@ -361,8 +392,7 @@
             <h2 class="contacts__heading">Let’s keep in touch</h2>
             <p class="contacts__description">Let's discuss how we can work together</p>
             <ul class="contacts__list">
-                <li class="contacts__list-email" data-aos="zoom-in"
-                data-aos-delay="100">
+                <li class="contacts__list-email" data-aos="zoom-in" data-aos-delay="100">
                     <a class="contacts__list-email-link" href="mailto:annabaidikova92@gmail.com">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 640 640"><!--!Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
@@ -372,8 +402,7 @@
                         <p>Send an e-mail</p>
                     </a>
                 </li>
-                <li class="contacts__list-github" data-aos="zoom-in"
-                data-aos-delay="400">
+                <li class="contacts__list-github" data-aos="zoom-in" data-aos-delay="400">
                     <a class="contacts__list-github-link" href="https://github.com/AnnetDev/" target="_blank" noreferrer
                         noopener>
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -384,8 +413,7 @@
                         <p>My GitHub</p>
                     </a>
                 </li>
-                <li class="contacts__list-linkedin" data-aos="zoom-in"
-                data-aos-delay="700">
+                <li class="contacts__list-linkedin" data-aos="zoom-in" data-aos-delay="700">
                     <a class="contacts__list-linkedin-link" href="https://www.linkedin.com/in/anna-baidikova/"
                         target="_blank" noreferrer noopener>
                         <svg xmlns="http://www.w3.org/2000/svg"
