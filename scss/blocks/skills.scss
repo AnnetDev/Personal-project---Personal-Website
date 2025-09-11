@@ -37,14 +37,16 @@
 }
 
 .skills.light-mode {
-    background-image: linear-gradient(rgba(248,245,240,0.6), rgba(248,245,240,0.6)),
-    image-set(url("/images/skills/skills-light-bg@1x.webp"),
-            url("/images/skills/skills-light-bg@2x.webp"),
-            url("/images/skills/skills-light-bg@1x.jpg"),
-            url("/images/skills/skills-light-bg@2x.jpg"));
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #f8f5f0;
+    // background-image: linear-gradient(rgba(248,245,240,0.6), rgba(248,245,240,0.6)),
+    // image-set(url("/images/skills/skills-light-bg@1x.webp"),
+    //         url("/images/skills/skills-light-bg@2x.webp"),
+    //         url("/images/skills/skills-light-bg@1x.jpg"),
+    //         url("/images/skills/skills-light-bg@2x.jpg"));
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    background-image: url("/images/bg-light.svg");
 
     svg {
         fill: #000000;

@@ -4,7 +4,7 @@
 
     @media (min-width: 1200px) {
         padding-top: 40px;
-        padding-bottom: 40px;    
+        padding-bottom: 40px;
     }
 }
 
@@ -44,7 +44,7 @@
     height: 220px;
     max-height: 250px;
     border-radius: 15px;
-    overflow-y: hidden;
+    overflow: hidden;
 
     @media (min-width: 768px) {
         height: 290px;
@@ -54,12 +54,11 @@
 
 
 .projects__list li img {
-    width: 100%;
+    width: 101%;
     height: 100%;
     height: auto;
     transition: all ease 0.3s;
     object-fit: cover;
-    // object-position: top;
     object-position: center;
 }
 
@@ -88,4 +87,29 @@
             0 0 10px rgba(255, 255, 255, 0.4), 0 0 20px rgba(0, 212, 255, 0.3),
             0 0 40px rgba(147, 51, 234, 0.2);
     }
+}
+
+.projects.light-mode {
+
+    .projects__list li h3,
+    .projects__list li a {
+        color: #2b2b2b;
+        font-weight: 600;
+    }
+
+    .projects__list li:hover,
+.projects__list li:focus,
+.projects__list li:focus-within {
+    transform: scale(1.1);
+
+    img {
+        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.15));
+    }
+
+    h3,
+    a {
+        text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+    }
+}
+
 }
