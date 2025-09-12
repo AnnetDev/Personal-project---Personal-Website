@@ -8,9 +8,9 @@
             url("/images/contacts/contacts-bg-mob@2x.webp") 2x,
             url("/images/contacts/contacts-bg-mob@1x.jpg") 1x,
             url("/images/contacts/contacts-bg-mob@2x.jpg") 2x);
-    background-attachment: scroll;
+        // background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: right top;
     inset: 0;
 
     @media (min-width: 768px) {
@@ -19,7 +19,6 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: right bottom;
-
         background-image:
             linear-gradient(rgba(12, 20, 45, 0.7), rgba(12, 20, 45, 0.7)),
             image-set(url("/images/contacts/contacts-bg-tab@1x.webp") 1x,
