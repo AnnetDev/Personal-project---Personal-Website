@@ -186,6 +186,13 @@ body.light-mode {
     }
 
     h2 {
+        background: linear-gradient(to right,
+        #0d1b2a 0%,
+        #1b263b 40%,
+        #415a77 70%,
+        #778da9 100%
+      );
+      
         background-clip: text;
         color: transparent;
         text-align: center;
