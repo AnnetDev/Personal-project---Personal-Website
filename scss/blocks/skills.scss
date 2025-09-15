@@ -12,7 +12,7 @@
 }
 
 .skills__list {
-    margin: 0;
+    margin: 0 0 30px;
     padding: 0;
     list-style: none;
     display: flex;
@@ -22,6 +22,8 @@
 }
 
 .skills__list-item {
+    position: relative;
+
     svg {
         width: 30vw;
         max-width: 100px;
@@ -52,5 +54,100 @@
     svg {
         fill: #000000;
         filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.15));
+    }
+}
+
+
+.skills__list-item svg.skills__scss {
+    position: absolute;
+    content: "";
+    width: 10vw;
+    max-width: 53px;
+    left: 53%;
+    bottom: 3%;
+}
+
+.skills__list-text-only {
+    list-style: none;
+    margin: 0 0 40px;
+    padding: 0;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    gap: 15px;
+
+    li {
+        font-size: 1.1rem;
+        line-height: 1.2rem;
+        font-weight: 600;
+        position: relative;
+        padding: 0 0 0 20px;
+
+        &::before {
+            position: absolute;
+            content: "";
+            border-radius: 50%;
+            background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+            top: 50%;
+            transform: translateY(-50%);
+            width: 15px;
+            height: 15px;
+            left: -20px;
+        }
+    }
+
+    li:nth-child(2n)::before {
+        background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+    }
+
+    li:nth-child(3n)::before {
+        background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    }
+
+    li:nth-child(4n)::before {
+        background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+        }
+
+    @media (min-width: 768px) {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, minmax(100px, 260px));
+        column-gap: 20px;
+        row-gap: 10px;
+        margin: 0 auto 50px;
+        max-width: 75%;
+        align-items: center;
+    }
+}
+
+.skills__tools-list {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    max-width: 80%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 15px;
+    color: #ffffff;
+}
+
+.skills__tools-list-item {
+    padding: 5px 8px;
+    background-color: #D47918;
+    box-shadow: 3px 3px 0 rgba(212, 121, 24, 0.6);
+    font-weight: 600;
+
+    &:nth-child(2n) {
+        background-color: #785ACC;
+        box-shadow: 3px 3px 0 rgba(120, 90, 204, 0.6);
+
+    }
+
+    &:nth-child(3n) {
+        background-color: #317C86;
+        box-shadow: 3px 3px 0 rgba(49, 124, 134, 0.6);
+
     }
 }
