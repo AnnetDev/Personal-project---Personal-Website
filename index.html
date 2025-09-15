@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anna Baidikova - Frontend & Web Developer — creating user-friendly and beautiful interfaces with a focus on responsiveness, speed, and accessibility">
     <link rel="preload" href="/Personal-project---Personal-Website/assets/Inconsolata-D2VM16eY.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <!-- <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> -->
     <link rel="icon" type="image/svg+xml" href="/Personal-project---Personal-Website/assets/favicon-Ck7qq7qn.svg">
     <title>Anna Baidikova</title>
-  <script type="module" crossorigin src="/Personal-project---Personal-Website/assets/index-D2g3k8lR.js"></script>
-  <link rel="stylesheet" crossorigin href="/Personal-project---Personal-Website/assets/index-WZfFovLK.css">
+  <script type="module" crossorigin src="/Personal-project---Personal-Website/assets/index-DAOxBT6o.js"></script>
+  <link rel="stylesheet" crossorigin href="/Personal-project---Personal-Website/assets/index-BIWRJcm-.css">
 </head>
 
 <body>
@@ -43,9 +43,10 @@
                     <button class="header__theme-toggle" data-id="theme-toggle">
                         <span class="visually-hidden">Click to dark-mode</span>
 
-                        <div class="header__theme-toggle-icon header__theme-toggle-icon-sun active" data-id="theme-toggle-sun"><svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                height="24" viewBox="0 0 24 24" role="img" aria-labelledby="sunTitle">
-                                <title id="sunTitle">Солнце</title>
+                        <div class="header__theme-toggle-icon header__theme-toggle-icon-sun active"
+                            data-id="theme-toggle-sun"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" role="img" aria-labelledby="sunTitle">
+                                <title id="sunTitle">Sun</title>
                                 <circle cx="12" cy="12" r="4" fill="currentColor" />
                                 <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
                                     <line x1="12" y1="1.5" x2="12" y2="4.5" />
@@ -58,12 +59,13 @@
                                     <line x1="17.8" y1="6.2" x2="19.8" y2="4.2" />
                                 </g>
                             </svg></div>
-                        <div class="header__theme-toggle-icon header__theme-toggle-icon-moon" data-id="theme-toggle-moon">
+                        <div class="header__theme-toggle-icon header__theme-toggle-icon-moon"
+                            data-id="theme-toggle-moon">
                             <span class="visually-hidden">Click to light-mode</span>
 
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 role="img" aria-labelledby="moonTitle">
-                                <title id="moonTitle">Луна</title>
+                                <title id="moonTitle">Moon</title>
                                 <path d="M21 12.79A9 9 0 1 1 11.21 3a7 7 0 0 0 9.79 9.79z" fill="currentColor" />
                             </svg>
                         </div>
@@ -76,7 +78,7 @@
 
     <main id="home">
         <section class="hero container" data-id="hero">
-            <div class="hero__text-container" data-aos="fade-down" data-aos-easing="linear" data-aos-delay="100"
+            <div class="hero__text-container" data-aos="fade-right" data-aos-easing="linear" data-aos-delay="100"
                 data-aos-duration="1200" startEvent="DOMContentLoaded">
                 <h1 class="hero__title">Anna Baidikova</h1>
                 <p class="hero__intro">
@@ -100,7 +102,7 @@
 
                 <img class="hero__main-image" src="/Personal-project---Personal-Website/assets/hero-image-mobile@1x-BnX_1eNs.png"
                     srcset="/Personal-project---Personal-Website/assets/hero-image-mobile@2x-BcxDb4OX.png 2x" width="280" height="279"
-                    alt="I'm Anna, I'm Frontend Developer. Nice to meet you!" data-aos="fade-down"
+                    alt="I'm Anna, I'm Frontend Developer. Nice to meet you!" data-aos="fade-left"
                     data-aos-easing="linear" data-aos-delay="100" data-aos-duration="1200"
                     startEvent="DOMContentLoaded">
             </picture>
@@ -386,7 +388,7 @@
             </ul>
         </section>
 
-        <section class="contacts container" id="contacts">
+        <section class="contacts container" id="contacts" data-id="contacts">
             <h2 class="contacts__heading">Let’s keep in touch</h2>
             <p class="contacts__description">Let's discuss how we can work together</p>
             <ul class="contacts__list">
@@ -431,7 +433,7 @@
     <footer class="footer container" data-id="footer">
         <div class="footer__main-content">
             <a class="footer__gh-link gh-link" href="https://github.com/AnnetDev" target="_blank" noreferrer
-                noopener>AnnetDev</a>
+                noopener aria-label="Go to Anna's GitHub">AnnetDev</a>
             <nav class="footer__nav">
                 <menu class="footer__menu">
                     <li class="footer__menu-item">
@@ -453,7 +455,7 @@
             </nav>
             <ul class="footer__social-list">
                 <li class="footer__social-list-item">
-                    <a class="footer__list-link  footer__list-email-link" href="mailto:annabaidikova92@gmail.com">
+                    <a class="footer__list-link  footer__list-email-link" href="mailto:annabaidikova92@gmail.com" aria-label="Click to send an email">
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 640 640"><!--!Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                             <path
@@ -463,7 +465,7 @@
                 </li>
                 <li class="footer__social-list-item">
                     <a class="footer__list-link footer__list-github-link" href="https://github.com/AnnetDev/"
-                        target="_blank" noreferrer noopener>
+                        target="_blank" aria-label="Go to Anna's GitHub" noreferrer noopener>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 640 640"><!--!Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                             <path
@@ -473,7 +475,7 @@
                 </li>
                 <li class="footer__social-list-item">
                     <a class="footer__list-link footer__list-linkedin-link"
-                        href="https://www.linkedin.com/in/anna-baidikova/" target="_blank" noreferrer noopener>
+                        href="https://www.linkedin.com/in/anna-baidikova/" target="_blank" aria-label="Go to Anna's LinkedIn" noreferrer noopener>
                         <svg xmlns="http://www.w3.org/2000/svg"
                             viewBox="0 0 640 640"><!--!Font Awesome Free 7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
                             <path
@@ -484,8 +486,8 @@
             </ul>
         </div>
         <div class="footer__attributions">
-            <p>Coded by <a href="https://github.com/AnnetDev" target="_blank" noreferrer noopener>Anna Baidikova</a></p>
-            <p>Free icons provided by <a href="https://fontawesome.com/" target="_blank" noreferrer
+            <p>Coded by <a href="https://github.com/AnnetDev" target="_blank" aria-label="Go to Anna's GitHub" noreferrer noopener>Anna Baidikova</a></p>
+            <p>Free icons provided by <a href="https://fontawesome.com/" target="_blank" aria-label="Open fontawesome" noreferrer
                     noopener>fontawesome.com</a></p>
         </div>
     </footer>
