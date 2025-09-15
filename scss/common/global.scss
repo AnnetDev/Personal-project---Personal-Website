@@ -99,6 +99,8 @@ img {
 }
 
 h2 {
+    display: inline-block;
+
     background: linear-gradient(to right,
             #ffb335 0%,
             #fda34b 40%,
@@ -108,7 +110,9 @@ h2 {
     color: transparent;
     text-align: center;
     margin: 0;
+    align-self: center;
     padding: 0;
+    
 
     @media (min-width: 768px) {
         font-size: 1.6rem;
@@ -132,6 +136,7 @@ h2 {
 
 section {
     position: relative;
+    text-align: center;
 
     &::before {
         position: absolute;
@@ -187,15 +192,19 @@ body.light-mode {
 
     h2 {
         background: linear-gradient(to right,
-        #0d1b2a 0%,
-        #1b263b 40%,
-        #415a77 70%,
-        #778da9 100%
-      );
-      
+                #0d1b2a 0%,
+                #1b263b 40%,
+                #415a77 70%,
+                #778da9 100%);
+
+        background: linear-gradient(to left,
+                #ec4899,
+                #317C86,
+                #785ACC);
         background-clip: text;
         color: transparent;
         text-align: center;
     }
 
 }
+

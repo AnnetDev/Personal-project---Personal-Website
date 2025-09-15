@@ -37,7 +37,7 @@
     background: linear-gradient(to right, #feb82d 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #1ac7fe 100%);
     background-clip: text;
     color: transparent;
-    margin: 0 0 20px;
+    margin: 20px 0 30px;
     padding: 0;
 }
 
@@ -96,5 +96,9 @@
 
     .hero__intro {
         font-weight: 500;
+    }
+
+    .hero__main-image {
+        filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
     }
 }

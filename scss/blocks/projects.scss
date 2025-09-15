@@ -32,7 +32,7 @@
     max-width: 200px;
     cursor: pointer;
     transform: scale(1);
-    transition: transform ease 0.3s;
+    transition: all ease 0.3s;
 
     @media (min-width: 768px) {
         max-width: 240px;
@@ -96,19 +96,25 @@
         font-weight: 600;
     }
 
+    // img {
+    //     // box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
+
+    // }
+
     .projects__list li:hover,
-.projects__list li:focus,
-.projects__list li:focus-within {
-    transform: scale(1.1);
+    .projects__list li:focus,
+    .projects__list li:focus-within {
+        transform: scale(1.1);
 
-    img {
-        filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.15));
-    }
+        img {
 
-    h3,
-    a {
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+            filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3)) drop-shadow(0 0 10px rgba(0, 0, 0, 0.2)) drop-shadow(0 0 20px rgba(0, 0, 0, 0.15));
+        }
+
+        h3,
+        a {
+            text-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+        }
     }
-}
 
 }

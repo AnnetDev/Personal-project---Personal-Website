@@ -31,7 +31,7 @@
         fill: #ffffff;
         filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 20px rgba(0, 212, 255, 0.15));
 
-        // для ховер эффектов
+        // для hover 
         // drop-shadow(0 0 5px rgba(255, 255, 255, 0.6))
         // drop-shadow(0 0 10px rgba(255, 255, 255, 0.4))
         // drop-shadow(0 0 20px rgba(0, 212, 255, 0.3))
@@ -82,6 +82,8 @@
         font-weight: 600;
         position: relative;
         padding: 0 0 0 20px;
+        text-align: start;
+
 
         &::before {
             position: absolute;
@@ -93,7 +95,7 @@
             transform: translateY(-50%);
             width: 15px;
             height: 15px;
-            left: -20px;
+            left: -15px;
         }
     }
 
@@ -112,11 +114,11 @@
     @media (min-width: 768px) {
         display: grid;
         justify-content: center;
-        grid-template-columns: repeat(2, minmax(100px, 260px));
-        column-gap: 20px;
+        grid-template-columns: repeat(2, minmax(100px, 350px));
+        column-gap: 15px;
         row-gap: 10px;
         margin: 0 auto 50px;
-        max-width: 75%;
+        max-width: 80%;
         align-items: center;
     }
 }
@@ -135,18 +137,19 @@
 
 .skills__tools-list-item {
     padding: 5px 8px;
-    background-color: #D47918;
+    background-color: rgba(212, 121, 24, 0.8);
     box-shadow: 3px 3px 0 rgba(212, 121, 24, 0.6);
     font-weight: 600;
+    text-align: start;
 
     &:nth-child(2n) {
-        background-color: #785ACC;
+        background-color: rgba(120, 90, 204, 0.8);
         box-shadow: 3px 3px 0 rgba(120, 90, 204, 0.6);
 
     }
 
     &:nth-child(3n) {
-        background-color: #317C86;
+        background-color: rgba(49, 124, 134, 0.8);
         box-shadow: 3px 3px 0 rgba(49, 124, 134, 0.6);
 
     }
