@@ -10,18 +10,30 @@ export const themeToggle = () => {
     const projectsSection = document.querySelector('[data-id="projects"]');
     const contactsSection = document.querySelector('[data-id="contacts"]');
 
-    document.addEventListener('DOMContentLoaded', () => {
+    // Function to apply theme
+    const applyTheme = (isLight) => {
+        const elements = [pageBody, header, heroSection, skillsSection, projectsSection, footer, contactsSection];
+        elements.forEach(element => {
+            element.classList.toggle('light-mode', isLight);
+        });
+        themeToggleBtnSun.classList.toggle('active', isLight);
+        themeToggleBtnMoon.classList.toggle('active', !isLight);
+    };
 
-        themeToggleBtn.addEventListener('click', () =>{
-            pageBody.classList.toggle('light-mode');
-            themeToggleBtnSun.classList.toggle('active');
-            themeToggleBtnMoon.classList.toggle('active');
-            header.classList.toggle('light-mode');
-            heroSection.classList.toggle('light-mode');
-            skillsSection.classList.toggle('light-mode');
-            projectsSection.classList.toggle('light-mode');
-            footer.classList.toggle('light-mode');
-            contactsSection.classList.toggle('light-mode');
+    document.addEventListener('DOMContentLoaded', () => {
+        // Check if theme preference exists in localStorage
+        const isLightMode = localStorage.getItem('theme') === 'light';
+        applyTheme(isLightMode);
+
+        themeToggleBtn.addEventListener('click', () => {
+            const isCurrentlyLight = pageBody.classList.contains('light-mode');
+            const newTheme = isCurrentlyLight ? 'dark' : 'light';
+            
+            // Save theme preference
+            localStorage.setItem('theme', newTheme);
+            
+            // Apply theme
+            applyTheme(!isCurrentlyLight);
         });
     });
 }
