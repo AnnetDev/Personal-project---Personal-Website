@@ -71,9 +71,9 @@
     transition: all ease 0.3s;
 }
 
-.projects__list li:hover,
-.projects__list li:focus,
-.projects__list li:focus-within {
+.projects .projects__list li:hover,
+.projects .projects__list li:focus,
+.projects .projects__list li:focus-within {
     transform: scale(1.1);
 
     img {
@@ -95,11 +95,6 @@
         color: #2b2b2b;
         font-weight: 600;
     }
-
-    // img {
-    //     // box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.6);
-
-    // }
 
     .projects__list li:hover,
     .projects__list li:focus,

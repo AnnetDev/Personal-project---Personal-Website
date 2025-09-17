@@ -16,8 +16,8 @@ export const themeToggle = () => {
         elements.forEach(element => {
             element.classList.toggle('light-mode', isLight);
         });
-        themeToggleBtnSun.classList.toggle('active', isLight);
-        themeToggleBtnMoon.classList.toggle('active', !isLight);
+        themeToggleBtnSun.classList.toggle('active', !isLight);
+        themeToggleBtnMoon.classList.toggle('active', isLight);
     };
 
     document.addEventListener('DOMContentLoaded', () => {
