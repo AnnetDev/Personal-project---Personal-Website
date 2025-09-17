@@ -1,34 +1,31 @@
 <svg width="100%" height="100%" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-  <defs>
-    <!-- Мягкие пастельные оттенки -->
+<defs>
     <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(245, 224, 220, 0.6)" />
-      <stop offset="100%" stop-color="rgba(250, 235, 225, 0.3)" />
+    <stop offset="0%" stop-color="rgba(245, 224, 220, 0.6)" />
+    <stop offset="100%" stop-color="rgba(250, 235, 225, 0.3)" />
     </linearGradient>
     <linearGradient id="circleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="rgba(240, 210, 200, 0.8)" />
-      <stop offset="100%" stop-color="rgba(255, 240, 235, 0.5)" />
+    <stop offset="0%" stop-color="rgba(240, 210, 200, 0.8)" />
+    <stop offset="100%" stop-color="rgba(255, 240, 235, 0.5)" />
     </linearGradient>
-  </defs>
+</defs>
 
-  <!-- Линии "веток" -->
-  <path d="M200 200 C400 250, 600 150, 800 300 S1200 450, 1400 350" 
+<path d="M200 200 C400 250, 600 150, 800 300 S1200 450, 1400 350" 
         stroke="url(#lineGrad)" stroke-width="3" fill="none" />
-  <path d="M200 500 C500 600, 700 400, 1000 600 S1400 700, 1700 500" 
+<path d="M200 500 C500 600, 700 400, 1000 600 S1400 700, 1700 500" 
         stroke="url(#lineGrad)" stroke-width="3" fill="none" opacity="0.8"/>
-  <path d="M400 800 C600 700, 900 900, 1200 750 S1600 650, 1800 850" 
+<path d="M400 800 C600 700, 900 900, 1200 750 S1600 650, 1800 850" 
         stroke="url(#lineGrad)" stroke-width="3" fill="none" opacity="0.6"/>
 
-  <!-- Кружочки "коммиты" -->
-  <circle cx="200" cy="200" r="10" fill="url(#circleGrad)" />
-  <circle cx="800" cy="300" r="12" fill="url(#circleGrad)" />
-  <circle cx="1400" cy="350" r="9" fill="url(#circleGrad)" />
+<circle cx="200" cy="200" r="10" fill="url(#circleGrad)" />
+<circle cx="800" cy="300" r="12" fill="url(#circleGrad)" />
+<circle cx="1400" cy="350" r="9" fill="url(#circleGrad)" />
 
-  <circle cx="200" cy="500" r="11" fill="url(#circleGrad)" />
-  <circle cx="1000" cy="600" r="14" fill="url(#circleGrad)" />
-  <circle cx="1700" cy="500" r="10" fill="url(#circleGrad)" />
+<circle cx="200" cy="500" r="11" fill="url(#circleGrad)" />
+<circle cx="1000" cy="600" r="14" fill="url(#circleGrad)" />
+<circle cx="1700" cy="500" r="10" fill="url(#circleGrad)" />
 
-  <circle cx="400" cy="800" r="12" fill="url(#circleGrad)" />
-  <circle cx="1200" cy="750" r="13" fill="url(#circleGrad)" />
-  <circle cx="1800" cy="850" r="9" fill="url(#circleGrad)" />
+<circle cx="400" cy="800" r="12" fill="url(#circleGrad)" />
+<circle cx="1200" cy="750" r="13" fill="url(#circleGrad)" />
+<circle cx="1800" cy="850" r="9" fill="url(#circleGrad)" />
 </svg>
