@@ -3,6 +3,9 @@ export const toggleBurgerMenu = () => {
     const headerNav = document.querySelector('[data-id="header-nav"]');
     const pageBody = document.querySelector('body');
     const headerMenu = document.querySelector('[data-id="header-menu"]');
+    const themeToggleBtnSun = document.querySelector('[data-id="theme-toggle-sun"]');
+    const themeToggleBtnMoon = document.querySelector('[data-id="theme-toggle-moon"]');
+
 
     let isMobile = window.innerWidth < 768;
 
@@ -54,7 +57,6 @@ export const toggleBurgerMenu = () => {
         }
     }
 
-    // Навешиваем/снимаем обработчики в зависимости от режима
     function setupMenu() {
         isMobile = window.innerWidth < 768;
 
@@ -69,21 +71,29 @@ export const toggleBurgerMenu = () => {
             headerNav.removeAttribute('inert');
             document.removeEventListener('keydown', trapFocus);
 
-            // снимаем обработчики, чтобы не мешали
             menuButton.removeEventListener('click', toggleMenu);
             headerMenu.removeEventListener('click', onMenuClick);
         }
     }
 
     function onMenuClick(event) {
-        if (event.target.tagName === 'A') {
+        const target = event.target;
+
+        if (target.tagName === 'A') {
+            closeMenu();
+        }
+    
+        if (
+            target === themeToggleBtnSun ||
+            target === themeToggleBtnMoon ||
+            target.closest('[data-id="theme-toggle-sun"]') ||
+            target.closest('[data-id="theme-toggle-moon"]')
+        ) {
             closeMenu();
         }
     }
 
-    // при загрузке
     document.addEventListener("DOMContentLoaded", setupMenu);
 
-    // при ресайзе
     window.addEventListener('resize', setupMenu);
 };

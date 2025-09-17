@@ -4,7 +4,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    position: sticky;
+    position: sticky; // for sticky header
     top: 0;
     z-index: 10;
     background-color: #000000;

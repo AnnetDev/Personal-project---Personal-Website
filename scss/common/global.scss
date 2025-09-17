@@ -5,7 +5,7 @@
 }
 
 html {
-    height: 100%;
+    height: 100%; // for sticky footer 
     scroll-behavior: smooth;
 }
 
@@ -14,9 +14,9 @@ body {
     min-height: 100vh;
     width: 100%;
     min-width: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    display: flex; // for sticky footer 
+    flex-direction: column; // for sticky footer 
+    justify-content: space-between; // for sticky footer 
     overflow-x: hidden;
     font-family: "Inconsolata", Consolas, monospace;
     font-size: 16px;
@@ -35,7 +35,7 @@ body {
     background-size: 250% 250%;
     animation: aurora-shift 10s ease-in-out infinite;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed; // for parallax
     position: relative;
 
     &::before {
@@ -66,7 +66,7 @@ body {
 }
 
 main {
-    flex-grow: 1;
+    flex-grow: 1; // for sticky footer 
 }
 
 .visually-hidden {
@@ -205,6 +205,4 @@ body.light-mode {
         color: transparent;
         text-align: center;
     }
-
 }
-

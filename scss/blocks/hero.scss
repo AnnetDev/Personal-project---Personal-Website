@@ -32,22 +32,22 @@
     border-right: 2px solid #ffffff;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 4s steps(15, end) forwards,
+    animation: typing 4s steps(15, end) forwards, // for typing animation
         blink 0.75s step-end infinite;
-    background: linear-gradient(to right, #feb82d 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #1ac7fe 100%);
+    background: linear-gradient(to right, #feb82d 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #1ac7fe 100%); // for gradient text
     background-clip: text;
     color: transparent;
     margin: 20px 0 30px;
     padding: 0;
 }
 
-@keyframes typing {
+@keyframes typing { // for typing animation
     from {
-        width: 0
+        width: 0;
     }
 
     to {
-        width: 15ch
+        width: 15ch;
     }
 }
 
@@ -89,9 +89,6 @@
 
     .hero__title {
         border-right: 2px solid #2b2b2b;
-        //         background: linear-gradient(to right, #feb82d 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #1ac7fe 100%);
-        // background-clip: text;
-
     }
 
     .hero__intro {

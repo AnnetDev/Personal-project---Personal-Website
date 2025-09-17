@@ -18,9 +18,8 @@
     @media (min-width: 500px) {
         padding-top: 80px;
         padding-bottom: 80px;
-        background-attachment: fixed;
-        background-size: unset; // ?
-
+        background-attachment: fixed; // for parallax
+        background-size: unset;
         background-repeat: no-repeat;
         background-position: right bottom;
         background-image:
