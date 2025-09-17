@@ -30,12 +30,6 @@
         height: auto;
         fill: #ffffff;
         filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.3)) drop-shadow(0 0 10px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 20px rgba(0, 212, 255, 0.15));
-
-        // для hover 
-        // drop-shadow(0 0 5px rgba(255, 255, 255, 0.6))
-        // drop-shadow(0 0 10px rgba(255, 255, 255, 0.4))
-        // drop-shadow(0 0 20px rgba(0, 212, 255, 0.3))
-        // drop-shadow(0 0 40px rgba(147, 51, 234, 0.2));
     }
 }
 
@@ -57,7 +51,7 @@
     width: 10vw;
     max-width: 53px;
     left: 53%;
-    bottom: 3%;
+    bottom: 17%;
 }
 
 .skills__list-text-only {
@@ -116,7 +110,8 @@
     }
 }
 
-.skills__tools-list {
+.skills__tools-list,
+.skills__soft-list {
     list-style: none;
     margin: 0 auto;
     padding: 0;
@@ -128,7 +123,12 @@
     color: #ffffff;
 }
 
-.skills__tools-list-item {
+.skills__tools-list {
+    margin-bottom: 30px;
+}
+
+.skills__tools-list-item,
+.skills__soft-list-item {
     padding: 5px 8px;
     background-color: rgba(212, 121, 24, 0.8);
     box-shadow: 3px 3px 0 rgba(212, 121, 24, 0.6);
